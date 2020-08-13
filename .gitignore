@@ -3,3 +3,8 @@
 ################################################################################
 
 /vc2019/x64/Debug
+/vc2019/.vs/grisu_exact11/v16
+/test_results/binary64_positive_k.csv
+/test_results/binary64_negative_k.csv
+/test_results/binary32_positive_k.csv
+/test_results/binary32_negative_k.csv

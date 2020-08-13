@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="benchmark">
+      <UniqueIdentifier>{d14742fc-8e67-4366-beb9-ba79fca236b1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="fp_to_chars">
+      <UniqueIdentifier>{67fa81c9-6817-4cb8-bf53-5decfb3ee59b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tests">
+      <UniqueIdentifier>{7966d85a-9119-492c-8e26-786733bdf8c9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tests\Headers">
+      <UniqueIdentifier>{8797ae5a-a990-4814-93f9-6dc1ddc58adf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="benchmark\ryu">
+      <UniqueIdentifier>{8b09f717-3329-452b-b586-a9d9dc0e4b7d}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\tests\random_float.h">
+      <Filter>tests\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\benchmark\ryu\common.h">
+      <Filter>benchmark\ryu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\benchmark\ryu\d2s.h">
+      <Filter>benchmark\ryu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\benchmark\ryu\d2s_full_table.h">
+      <Filter>benchmark\ryu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\benchmark\ryu\d2s_intrinsics.h">
+      <Filter>benchmark\ryu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\benchmark\ryu\digit_table.h">
+      <Filter>benchmark\ryu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\benchmark\ryu\f2s_full_table.h">
+      <Filter>benchmark\ryu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\benchmark\ryu\f2s_intrinsics.h">
+      <Filter>benchmark\ryu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\benchmark\ryu\ryu.h">
+      <Filter>benchmark\ryu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\benchmark\benchmark.h">
+      <Filter>benchmark</Filter>
+    </ClInclude>
+    <ClInclude Include="..\grisu_exact11.h" />
+    <ClInclude Include="..\fp_to_chars11.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\tests\live_test.cpp">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tests\misc_test.cpp">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tests\uniform_random_perf_test.cpp">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tests\uniform_random_test.cpp">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fp_to_chars\fp_to_chars.cpp">
+      <Filter>fp_to_chars</Filter>
+    </ClCompile>
+    <ClCompile Include="..\benchmark\ryu\d2s.c">
+      <Filter>benchmark\ryu</Filter>
+    </ClCompile>
+    <ClCompile Include="..\benchmark\ryu\f2s.c">
+      <Filter>benchmark\ryu</Filter>
+    </ClCompile>
+    <ClCompile Include="..\benchmark\benchmark.cpp">
+      <Filter>benchmark</Filter>
+    </ClCompile>
+    <ClCompile Include="..\benchmark\grisu_exact.cpp">
+      <Filter>benchmark</Filter>
+    </ClCompile>
+    <ClCompile Include="..\benchmark\grisu_exact_wo_correct_rounding.cpp">
+      <Filter>benchmark</Filter>
+    </ClCompile>
+    <ClCompile Include="..\benchmark\ryu.cpp">
+      <Filter>benchmark</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tests\main.cpp" />
+  </ItemGroup>
+</Project>
