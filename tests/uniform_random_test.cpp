@@ -34,7 +34,7 @@ void uniform_random_test(std::size_t number_of_tests, TypenameString&& type_name
 		auto x = uniformly_randomly_generate_general_float<Float>(rg);
 
 		// Check if the output is identical to that of Ryu
-		jkj::fp_to_chars(x, buffer1);
+		jkj::fp_to_chars11(x, buffer1);
 		if (std::is_same<Float, float>::value) {
 			f2s_buffered(float(x), buffer2);
 		}

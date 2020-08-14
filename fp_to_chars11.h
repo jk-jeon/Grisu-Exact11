@@ -21,7 +21,7 @@
 #include "grisu_exact11.h"
 
 namespace jkj {
-	namespace fp_to_chars_detail {
+	namespace fp_to_chars11_detail {
 		char* float_to_chars(unsigned_fp_t<float> v, char* buffer);
 		char* double_to_chars(unsigned_fp_t<double> v, char* buffer);
 	}
@@ -31,7 +31,7 @@ namespace jkj {
 		class RoundingMode = grisu_exact11_rounding_modes::nearest_to_even,
 		class CorrectRoundingSearch = grisu_exact11_correct_rounding::tie_to_even
 	>
-	char* fp_to_chars_n(Float x, char* buffer,
+	char* fp_to_chars11_n(Float x, char* buffer,
 		RoundingMode&& rounding_mode = {},
 		CorrectRoundingSearch&& crs = {})
 	{
@@ -43,12 +43,12 @@ namespace jkj {
 			}
 			if (br.is_nonzero()) {
 				if (sizeof(Float) == 4) {
-					return fp_to_chars_detail::float_to_chars(grisu_exact11<false>(float(x),
+					return fp_to_chars11_detail::float_to_chars(grisu_exact11<false>(float(x),
 						std::forward<RoundingMode>(rounding_mode),
 						std::forward<CorrectRoundingSearch>(crs)), buffer);
 				}
 				else {
-					return fp_to_chars_detail::double_to_chars(grisu_exact11<false>(double(x),
+					return fp_to_chars11_detail::double_to_chars(grisu_exact11<false>(double(x),
 						std::forward<RoundingMode>(rounding_mode),
 						std::forward<CorrectRoundingSearch>(crs)), buffer);
 				}
@@ -80,11 +80,11 @@ namespace jkj {
 		class RoundingMode = grisu_exact11_rounding_modes::nearest_to_even,
 		class CorrectRoundingSearch = grisu_exact11_correct_rounding::tie_to_even
 	>
-	char* fp_to_chars(Float x, char* buffer,
+	char* fp_to_chars11(Float x, char* buffer,
 		RoundingMode&& rounding_mode = {},
 		CorrectRoundingSearch&& crs = {})
 	{
-		auto ptr = fp_to_chars_n(x, buffer,
+		auto ptr = fp_to_chars11_n(x, buffer,
 			std::forward<RoundingMode>(rounding_mode),
 			std::forward<CorrectRoundingSearch>(crs));
 		*ptr = '\0';

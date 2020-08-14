@@ -179,7 +179,7 @@
     <ClCompile Include="..\benchmark\ryu.cpp" />
     <ClCompile Include="..\benchmark\ryu\d2s.c" />
     <ClCompile Include="..\benchmark\ryu\f2s.c" />
-    <ClCompile Include="..\fp_to_chars\fp_to_chars.cpp" />
+    <ClCompile Include="..\fp_to_chars\fp_to_chars11.cpp" />
     <ClCompile Include="..\tests\live_test.cpp" />
     <ClCompile Include="..\tests\main.cpp" />
     <ClCompile Include="..\tests\misc_test.cpp" />

@@ -64,9 +64,6 @@
     <ClCompile Include="..\tests\uniform_random_test.cpp">
       <Filter>tests</Filter>
     </ClCompile>
-    <ClCompile Include="..\fp_to_chars\fp_to_chars.cpp">
-      <Filter>fp_to_chars</Filter>
-    </ClCompile>
     <ClCompile Include="..\benchmark\ryu\d2s.c">
       <Filter>benchmark\ryu</Filter>
     </ClCompile>
@@ -86,5 +83,8 @@
       <Filter>benchmark</Filter>
     </ClCompile>
     <ClCompile Include="..\tests\main.cpp" />
+    <ClCompile Include="..\fp_to_chars\fp_to_chars11.cpp">
+      <Filter>fp_to_chars</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

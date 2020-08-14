@@ -81,7 +81,7 @@ void live_test()
 		}
 		std::cout << xx.significand << std::dec << std::endl;
 
-		jkj::fp_to_chars(x, buffer);
+		jkj::fp_to_chars11(x, buffer);
 		std::cout << " Grisu-Exact output: " << buffer << std::endl;
 	}
 }

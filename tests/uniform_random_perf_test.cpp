@@ -29,7 +29,7 @@ void uniform_random_perf_test(std::size_t number_of_tests)
 	auto rg = generate_correctly_seeded_mt19937_64();
 	for (std::size_t test_idx = 0; test_idx < number_of_tests; ++test_idx) {
 		auto x = uniformly_randomly_generate_general_float<Float>(rg);
-		jkj::fp_to_chars(x, buffer);
+		jkj::fp_to_chars11(x, buffer);
 	}
 }
 

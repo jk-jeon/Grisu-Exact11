@@ -60,7 +60,7 @@ static void benchmark_test(std::string const& float_name,
 	for (auto& name_result_pair : out) {
 		for (auto const& data_time_pair : name_result_pair.second[0]) {
 			std::memcpy(&br, &data_time_pair.first, sizeof(Float));
-			jkj::fp_to_chars(data_time_pair.first, buffer);
+			jkj::fp_to_chars11(data_time_pair.first, buffer);
 			out_file << "\"" << name_result_pair.first << "\"," << buffer << "," <<
 				"0x" << std::hex << std::setfill('0');
 			if (sizeof(Float) == 4)
@@ -83,7 +83,7 @@ static void benchmark_test(std::string const& float_name,
 	for (auto& name_result_pair : out) {
 		for (unsigned int digits = 1; digits <= benchmark_holder<Float>::max_digits; ++digits) {
 			for (auto const& data_time_pair : name_result_pair.second[digits]) {
-				jkj::fp_to_chars(data_time_pair.first, buffer);
+				jkj::fp_to_chars11(data_time_pair.first, buffer);
 				out_file << "\"" << name_result_pair.first << "\"," << digits << "," <<
 					buffer << "," << data_time_pair.second << "\n";
 			}

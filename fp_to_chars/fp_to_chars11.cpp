@@ -38,10 +38,10 @@
 //  under the same terms as the original contents.
 
 
-#include "../fp_to_chars.h"
+#include "../fp_to_chars11.h"
 
 namespace jkj {
-	namespace fp_to_chars_detail {
+	namespace fp_to_chars11_detail {
 		static constexpr char radix_100_table[] = {
 			'0', '0', '0', '1', '0', '2', '0', '3', '0', '4',
 			'0', '5', '0', '6', '0', '7', '0', '8', '0', '9',

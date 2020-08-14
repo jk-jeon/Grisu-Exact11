@@ -21,13 +21,13 @@
 namespace {
 	void grisu_exact11_wo_correct_rounding_float_to_chars(float x, char* buffer)
 	{
-		jkj::fp_to_chars(x, buffer,
+		jkj::fp_to_chars11(x, buffer,
 			jkj::grisu_exact11_rounding_modes::nearest_to_even{},
 			jkj::grisu_exact11_correct_rounding::do_not_care{});
 	}
 	void grisu_exact11_wo_correct_rounding_double_to_chars(double x, char* buffer)
 	{
-		jkj::fp_to_chars(x, buffer,
+		jkj::fp_to_chars11(x, buffer,
 			jkj::grisu_exact11_rounding_modes::nearest_to_even{},
 			jkj::grisu_exact11_correct_rounding::do_not_care{});
 	}
